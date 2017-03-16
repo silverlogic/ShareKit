@@ -164,12 +164,6 @@ evernote.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' 
    onenote.dependency 'LiveSDK'
   end
 
-  s.subspec 'YouTube' do |youtube|
-    youtube.source_files = 'Classes/ShareKit/Sharers/Services/YouTube/**/*.{h,m}'
-    youtube.dependency 'ShareKit/Core'
-    youtube.dependency 'GoogleAPIClient/YouTube'
-  end
-
   s.subspec 'GooglePlus' do |googleplus|
     googleplus.source_files = 'Classes/ShareKit/Sharers/Services/Google Plus/**/*.{h,m}'
     googleplus.vendored_frameworks = 'Frameworks/GooglePlus.framework'
